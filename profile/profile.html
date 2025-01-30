@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div class="container">
+        <nav id="scroll">
+            <div class="left">
+                <div class="logo">
+                    <img src="img/Black & White Minimalist Aesthetic Initials Font Logo.png" alt="">
+                </div>
+            </div>
+            <div class="right">
+                <!-- <button class="link">Logout</button> -->
+                <a href="#" class="link" onclick="logout()">Logout</a>
+                <a href="../home/index.html" class="link">Home</a>
+                <div class="profile">
+                    <a href=""><img src="" onerror="this.src='img/yesyes.jpg'" alt="" id="ima"></a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="up">
+            <div class="intro">
+                <h1>hello, i'm <span>shushu</span></h1>
+                <textarea id="bio" placeholder="write about yourself"></textarea>
+                <button id="bioS">done</button>
+                <p id="bioDisplay"></p>
+                <button id="editBio">edit</button>
+                <p class="numbers">posts: <span>0</span></p>
+                <p class="numbers">comments: <span>0</span></p>
+            </div>            
+            
+            <div class="profile">
+                <img src="" onerror="this.src='img/yesyes.jpg'" alt="">
+            </div>
+        </div>
+        <div class="content">
+            <div class="posting">
+                <button id="exit">×</button>
+                <div class="box">
+                    <h1>Edit your post here!</h1>
+                    <input type="file" accept="image" id="file">
+                    <textarea placeholder="title" id="title"></textarea>
+                    <textarea name="" id="text" placeholder="write your ideas"></textarea>
+                    <button id="post">Edit</button>
+                </div>
+            </div>
+    
+            <div class="deleting" id="deleted">
+                <button id="exiting">×</button>
+                <div class="boxing">
+                    <h1>Are you sure you want to delete your post?</h1>
+                    <div class="buttons"><button id="yes">Yes</button>
+                        <button id="no">No</button></div>
+                </div>
+            </div>
+    
+            <div class="overlay"></div>
+                <h1>All my posts :</h1>
+                
+            
+            </div>
+            </div>
+    </div>
+    <script src="../node_modules/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

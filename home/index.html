@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../node_modules/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div class="container">
+            <nav id="scroll">
+                <div class="left">
+                    <div class="logo">
+                        <img src="img/Black & White Minimalist Aesthetic Initials Font Logo.png" alt="">
+                    </div>
+                </div>
+                <div class="right">
+                    <!-- <button class="link">Logout</button> -->
+                    <a href="../profile/profile.html" class="link">Profile</a>
+                    <div class="profile">
+                        <a href="../profile/profile.html"><img src="img/yesyes.jpg" alt="" id="ima"></a>
+                    </div>
+                </div>
+            </nav>
+        
+        <div class="posting">
+            <button id="exit">×</button>
+            <div class="box">
+                <h1>Share your post with us!</h1>
+                <input type="file" accept="image" id="file">
+                <textarea placeholder="title" id="title"></textarea>
+                <textarea name="" id="text" placeholder="write your ideas"></textarea>
+                <button id="post">Post</button>
+            </div>
+        </div>
+
+        <div class="overlay"></div>
+           <div class="content">
+            <button class="button">+</button>
+
+        </div> 
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

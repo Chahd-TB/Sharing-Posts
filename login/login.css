@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    z-index: 1;
+    background-color: white; /* Background color for body */
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Login Section */
+.login {
+    border-radius: 0 100px 100px 0;
+    width: 50%;
+    background-color: #272343; /* Updated background color */
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    padding: 5% 20%;
+    color: #f1f2f6; /* Text color */
+}
+
+img {
+    width: 70%;
+    height: 70%;
+    margin: 70px;
+}
+
+label {
+    font-size: 20px;
+    margin-top: 20px;
+}
+input{
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.605);
+}
+.center input {
+    outline: none;
+    width: 90%;
+    padding: 15px 10px;
+    margin: 10px 0;
+    border: 1px solid #333; /* Added border color */
+}
+
+button {
+    color: white;
+    width: 96%;
+    background-color: #e04a3f; /* Updated button color */
+    border: none;
+    padding: 15px 10px;
+    margin: 25px 0;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media(max-width: 700px) {
+    .welcome {
+        display: none;
+    }
+
+    .login {
+        width: 100%;
+        border-radius: 0;
+    }
+}
+
+@media(max-width: 550px) {
+    button {
+        width: 100%;
+    }
+}
+
+span {
+    color: rgba(255, 252, 252, 0.7); /* Updated span color */
+}
+
+/* Signup Section */
+.welcome {
+    width: 50%;
+     /* Updated background color */
+    border-radius: 0;
+}
+
+.cent {
+    display: flex;
+    flex-direction: column;
+    padding: 0% 20%;
+    padding-left: 30%;
+    color: #f1f2f6; /* Text color */
+}
+
+.welcome input {
+    outline: none;
+    width: 90%;
+    padding: 10px 10px;
+    margin: 10px 0;
+    border: 1px solid #333; /* Added border color */
+}
+
+.cent label {
+    margin-top: 8px;
+    font-size: 18px;
+}
+
+.cent h1 {
+    margin-bottom: 20px;
+    margin-top: 25px;
+}
+
+.cent {
+    display: none;
+}
+
+#im {
+    display: none;
+}
+
+a {
+    color: #e04a3f; /* Updated link color */
+    text-decoration: none;
+    text-align: center;
+}
+.welcome input::-webkit-file-upload-button {
+    padding: 8px; /* For WebKit browsers */
+    margin-right: 15px;
+}
+#images{
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0);
+    padding: 0;
+    border: 0px solid #33333300; /* Added border color */
+}
+#btnSign{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}

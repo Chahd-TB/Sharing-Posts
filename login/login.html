@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login">
+          <div class="center">
+            <h1>Login</h1>
+            <label for="name">UserName</label>
+            <input type="text" placeholder="UserName" id="name">
+            <label for="email">Email</label>
+            <input type="text" placeholder="Email" id="email">
+            <label for="password">Password</label>
+            <input type="password" placeholder="Your Password" id="password">
+            <button id="btn" onclick="login()">Login</button>
+            <a href="" id="signup"><span>New User?</span> Signup now</a>
+          </div>
+          <img src="img/3054281.jpg" alt="" id="im">
+        </div>
+
+        <div class="welcome">
+          <div class="cent">
+            <h1>Signup</h1>
+          <label for="UserName">UserName</label>
+          <input type="text" id="UserName" placeholder="UserName">
+            <label for="newename">Name</label>
+          <input type="text" id="newename" placeholder="Name">
+
+            <label for="newemail">Email</label>
+            <input type="email" placeholder="Your Email" id="newemail">
+            <label for="newpassword">Password</label>
+            <input type="password" placeholder="Your Password" id="newpassword">
+            <label for="images">Profile image</label>
+            <input type="file" id="images" accept="image">
+            <button id="btnSign" onclick="signup()">Signup</button>
+            <a href="" id="login"><span>Have an account?</span> Login</a>
+          </div>
+            <img src="img/3054281.jpg" alt="" id="image">
+        </div>
+    </div>
+    <script src="../node_modules/axios/dist/axios.min.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>
